@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='title_page.css')}}">
+    <title>consumption</title>
+  </head>
+  <body>
+    <div>
+      <p>{{name}}を削除しました<br></p>
+      <form action="/inventory_control" method="POST">
+        <input type="submit" value="confirmed">
+      </form>
+    </div>
+  </body>
+</html>

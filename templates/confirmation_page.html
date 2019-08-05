@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='title_page.css')}}">
+    <title>confirmation_page</title>
+  </head>
+  <body>
+    <div>
+      <p>{{name}}を{{quantity}}個入庫しました<br>
+        　日付{{date}}
+      </p>
+      <form action="/registration" method="POST">
+        <input type="submit" value="confirmed">
+      </form>
+    </div>
+  </body>
+</html>

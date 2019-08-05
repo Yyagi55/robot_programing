@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>delete</title>
+    <script src="static/today.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='title_page.css')}}">
+  </head>
+  <body>
+    <div>
+      <p1>削除する品名を入力してください</p1>
+      <form action="/delete_confirmation" method="POST">
+        <b>品名</b><input type="text" name="name"></input><br>
+        <input type="submit" value="Enter">
+      </form>
+      <br>
+      <form action="/inventory_control" method="POST">
+        <input type="submit" value="back">
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>inventory_control</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='title_page.css')}}">
+  </head>
+  <body>
+    <div>
+    <h1>操作を選択してください</h1>
+      <form action="/new_registration" method="POST">
+        <input type="submit" value="新規登録">
+      </form>
+      <form action="/add" method="POST">
+        <input type="submit" value="入庫">
+      </form>
+      <form action="/consumption" method="POST">
+        <input type="submit" value="出庫">
+      </form>
+      <form action="/delete" method="POST">
+        <input type="submit" value="削除">
+      </form>
+      <br>
+      <form action="/main" method="POST">
+        <input type="submit" value="back to main_page">
+      </form>
+    </div>
+  </body>
+</html>

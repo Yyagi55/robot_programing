@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>graph_select</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='title_page.css')}}">
+  </head>
+  <body>
+    <div>
+    <h1>操作を選択してください</h1>
+      <form action="/total_stoc" method="POST">
+        <input type="submit" value="総在庫数">
+      </form>
+      <form action="/inventory_change" method="POST">
+        <input type="submit" value="在庫推移">
+      </form>
+      <br>
+      <form action="/main" method="POST">
+        <input type="submit" value="back to main_page">
+      </form>
+    </div>
+  </body>
+</html>
